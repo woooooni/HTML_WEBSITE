@@ -1,0 +1,159 @@
+/*StyleSheet*/
+/* 인터넷 필요 */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Oswald:wght@300&display=swap&family=Noto+Sans+KR:wght@500&display=swap&family=Nanum+Gothic+Coding&display=swap&family=Gugi&display=swap');
+
+
+/*Main_Video_Section*/
+#main_section{
+    margin: 0 auto;
+    width: 100%; height: 650px;
+    position: relative;
+}
+#main_section .video_section{
+    margin-top: 125px;
+    width: 100%; height: 650px;
+    position: absolute;
+    overflow: hidden;
+}
+#main_section .video_section video{
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
+#main_section .video_section .video_text{
+    margin-top: 0;
+    width: 100%; height: 150%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+#main_section .video_section .video_text p{
+    margin-top: 200px;
+    font-size: 68px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*contents1*/
+#contents1{width: 100%;}
+
+/* Designer */
+#contents1 .DesignerProfile{
+    width: 100%; height: 500px;
+    overflow: hidden;
+    background-image: url("../img/DesignerBG.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 200px;
+}
+#contents1 .DesignerProfile > img{
+    width: 300px; height: 300px;
+    border-radius: 20%;
+    margin-top: 15px; margin-left: 25px;
+    float: left;
+}
+#contents1 .DesignerProfile .profileTitle{
+    text-align: left;
+    font-size: 32px; font-family: 'Oswald', sans-serif; text-align: center;
+    color: black;
+    padding: 20px 20px 20px 20px;
+}
+#contents1 .DesignerProfile .profileText{float: left; margin-left: 35px;}
+#contents1 .DesignerProfile .profileText p:nth-child(1){
+    font-size: 28px; font-family: 'Century Gothic';font-weight: bold;
+    margin-top: 25px;
+}
+#contents1 .DesignerProfile .profileText p:nth-child(2){
+    font-size: 20px; margin-left: 35px; margin-top: 40px;
+}
+
+#contents1 .DesignerProfile .profileContentImg{margin-top: 160px}
+#contents1 .DesignerProfile .profileContentImg img{
+    width: 100%; height: 100%;
+    border-radius: 50%;
+}
+#contents1 .DesignerProfile .profileContentImg p{
+    float: left; width: 150px; height: 150px;
+    margin-left: 35px;}
+#contents1 .DesignerProfile .profileContentImg p:hover{
+    animation: motion 0.5s linear 0s infinite alternate; margin-top: 0;
+}
+#contents1 .DesignerProfile .profileContentImg .more{
+    float: right;
+    margin-top: 125px; margin-right: 175px;
+    padding: 5px 5px ;
+    background-color: #0206f515;
+    border: solid 3px #000000; border-radius: 10px;
+    transition: all 0.5s;
+}
+#contents1 .DesignerProfile .profileContentImg .more:hover{background-color: gray;}
+#contents1 .DesignerProfile .profileContentImg .more a{color: rgb(0, 0, 0); font-size: 18px; }
+#contents1 .DesignerProfile .profileContentImg .more a:hover{color: rgb(255, 255, 255);}
+
+
+/* Programmer */
+#contents1 .ProgrammerProfile{
+    float: left;
+    width: 100%; height: 500px;
+    margin-top: 200px;
+    overflow: hidden;
+    background-image: url("../img/ProgrammerBG.PNG"); background-repeat: no-repeat;
+    background-size: 100%;
+}
+#contents1 .ProgrammerProfile > img{
+    width: 300px; height: 300px;
+    border-radius: 20%;
+    margin-top: 15px; margin-left: 25px;
+    float: left;
+}
+#contents1 .ProgrammerProfile .profileTitle{
+    padding: 20px 20px 20px 20px;
+    font-size: 32px; font-family: 'Oswald', sans-serif; text-align: center; color: black;
+}
+#contents1 .ProgrammerProfile .profileText{float: left; margin-left: 35px;}
+#contents1 .ProgrammerProfile .profileText p:nth-child(1){
+    font-size: 28px; font-family: 'Century Gothic'; font-weight: bold;
+    margin-top: 25px; }
+#contents1 .ProgrammerProfile .profileText p:nth-child(2){
+    font-size: 20px;
+    margin-left: 35px; margin-top: 40px;
+}
+
+#contents1 .ProgrammerProfile .profileContentImg{margin-top: 160px}
+#contents1 .ProgrammerProfile .profileContentImg img{
+    width: 100%; height: 100%;
+    border-radius: 50%;
+}
+#contents1 .ProgrammerProfile .profileContentImg p{
+    float: left;
+    width: 150px; height: 150px;  margin-left: 35px; }
+#contents1 .ProgrammerProfile .profileContentImg p:hover{
+    animation: motion 0.5s linear 0s infinite alternate; margin-top: 0;
+}
+#contents1 .ProgrammerProfile .profileContentImg .more{
+    float: right;
+    margin-top: 125px;margin-right: 175px;
+    padding: 5px 5px ; background-color: #0206f515;
+    border: solid 3px #000000; border-radius: 10px;
+    transition: all 0.5s;
+}
+#contents1 .ProgrammerProfile .profileContentImg .more:hover{background-color: gray;}
+#contents1 .ProgrammerProfile .profileContentImg .more a{color: rgb(0, 0, 0); font-size: 18px; }
+#contents1 .ProgrammerProfile .profileContentImg .more a:hover{color: rgb(255, 255, 255);}
+
+@keyframes motion {
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
+}
+
+@media(max-width:1200px)
+{
+    *{display: none;}
+}
+
+

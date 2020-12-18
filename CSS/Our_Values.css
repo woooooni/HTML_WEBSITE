@@ -1,0 +1,67 @@
+/*StyleSheet*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/*contents1*/
+#contents1 { width: 100%; height: auto; background-color: rgb(255, 255, 255);}
+
+#contents1 .Our_Values{
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+#contents1 .Our_Values:nth-child(1){padding-top: 350px;}
+#contents1 .Our_Values:nth-child(1) .Our_Values_Title{color: rgb(126, 16, 16);}
+#contents1 .Our_Values:nth-child(1) .Our_Values_TxT{color: black;}
+#contents1 .Our_Values:nth-child(2){background: #ffefb3; padding-top: 250px;}
+#contents1 .Our_Values:nth-child(3){background-color: #f17c7c; padding-top: 250px; }
+#contents1 .Our_Values:nth-child(4){background-color: #d0ffbd; padding-top: 250px;}
+#contents1 .Our_Values:nth-child(5){background-color: #B3E4EF; padding-top: 250px;}
+
+#contents1 .Our_Values_Title{
+    width: 100%;
+    text-align: center; font-size: 2.5rem; font-weight: bold; color: rgba(5, 12, 51, 0.699);
+}
+#contents1 .Our_Values_TxT{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 25px; text-align: center;
+    color:black;
+    margin-top: 20px; }
+
+
+
+
+/* contents2 */
+#contents2{padding-top: 30px; width: 100%; text-align: center;}
+input{display: none;}
+#inputblock{width: 100%; text-align: center; display: inline-block;}
+label{
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 15px 26px;
+  text-align: center;
+  color: #818181;
+  cursor: pointer; line-height: 20px;
+  font-size: 1.25rem;}
+label:hover{color: black; border-bottom: 1px solid #315994; transition: all 1s;}
+label img{width: 20px; height: 20px;}
+input:checked + label{
+    color: #555;
+    border-bottom: 1px solid #2e9cdf;
+}
+
+#root1:checked~#comments1,
+#root2:checked~#comments2,
+#root3:checked~#comments3{display: block;}
+
+.comments{ margin-top: 20px; display: none; text-align: center; width: 100%; line-height: 2;}
+.comments p{font-family: 'Nanum Gothic Coding', monospace; font-size: 1.2em; display: inline-block; text-align: center; align-content: center;}
+.comments:nth-of-type(1) p span{color: rgb(131, 0, 0);}
+.comments:nth-of-type(2) p span{color: rgb(0, 82, 206);}
+.comments:nth-of-type(3) p span{color: rgb(0, 155, 26);}
+
+@media(max-width:1200px)
+{
+    *{display: none;}
+}
+

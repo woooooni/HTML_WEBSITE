@@ -1,0 +1,45 @@
+/*StyleSheet*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Oswald:wght@300&display=swap&family=Noto+Sans+KR:wght@500&display=swap&family=Nanum+Gothic+Coding&display=swap&family=Gugi&display=swap');
+
+
+/* 시작 */
+#QnA { background-image:url("../img/QnA.jpg"); width: 100%; height: auto; background-repeat: no-repeat;
+background-position: 100%; padding-top: 150px;}
+#QnA h1{text-align: center; padding-top: 50px; font-size: 32px;}
+#QnA .notice_board{background-color: rgba(255, 255, 255, 0.7); width: 70%; margin: 0 auto; height: auto; margin-top: 20px;}
+#QnA .notice_board .search_board{border-bottom: 3px black solid; width: 100%; height: 50px; text-align: right;}
+#QnA .notice_board .search_board input:nth-of-type(1){height: 30px;}
+#QnA .notice_board .search_board input:nth-of-type(2){height: 30px; width: 50px;}
+#QnA .notice_board .search_board select:nth-of-type(1){height: 35px;}
+
+#QnA .notice_board .notice{width: 100%; display: none;}
+#QnA .notice_board .notice .contents{padding-left: 30px; padding-top: 30px; padding-bottom: 30px; border-top: #bbbbbb solid 1px; border-bottom: #bbbbbb solid 1px; }
+#QnA .notice_board .notice .contents p{color: #555;}
+#QnA .notice_board .notice .contents p:nth-of-type(2){margin-top: 20px;}
+#QnA .notice_board .notice .contents a{color: black;}
+#QnA .notice_board .notice .contents a:hover{text-decoration-line: underline;}
+#QnA .notice_board .notice .contents span{padding-right: 12px; margin-left: 12px; border-right: #bbbbbb solid 1px;}
+#QnA .notice_board .notice .contents span:nth-of-type(1){margin-left: 0px;}
+
+input#tab1, input#tab2, input#tab3 {display: none;}
+label {display: inline-block; padding: 15px 25px; font-weight: 600; color: #bbb; border: 1px solid transparent;}
+label:hover {color: #2e9cdf; cursor: pointer;}
+
+/*input 클릭시, label 스타일*/
+input#tab1:checked + label, input#tab2:checked + label, input#tab3:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #2e9cdf;
+    border-bottom: 1px solid #ffffff;}
+#QnA .notice_board input#tab1:checked ~ #notice1,
+#QnA .notice_board input#tab2:checked ~ #notice2,
+#QnA .notice_board input#tab3:checked ~ #notice3 {display: block;}
+#enrollment{background-color: #315994; margin-top: 5px; float: right; padding: 10px 10px 10px 10px; margin-right: 1%;}
+#enrollment:hover{cursor: pointer; background-color: #294a7c;}
+#enrollment a{color: white;}
+@media(max-width:1200px)
+{
+    *{display: none;}
+}
